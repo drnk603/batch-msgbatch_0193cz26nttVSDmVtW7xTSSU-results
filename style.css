@@ -535,9 +535,7 @@ ol {
   background-color: var(--color-neutral-light);
 }
 
-.bg-dark {
-  background-color: var(--color-neutral-dark);
-}
+
 
 .bg-primary {
   background-color: var(--color-primary);
@@ -1589,5 +1587,27 @@ cite {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+}
+
+/* AUTO-FIX: bg-dark improved contrast */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* AUTO-INJECTED: g-4 layout fix */
+.g-4 > * {
+  width: 100%;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
   }
 }
